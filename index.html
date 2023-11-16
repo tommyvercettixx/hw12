@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <form id="myForm" onsubmit="submitForm(event)">
+          <label for="name">Фотография:</label>
+          <input type="file" id="photo" name="photo" required><br>
+
+          <label for="name">Имя:</label><br>
+          <input type="text" id="name" name="name" style="width: 50%;" required><br>
+
+          <label for="lastname">Фамилия:</label><br>
+          <input type="text" id="lastname" name="lastname" style="width: 50%;" required><br><br>
+
+          <label for="company">Компания:</label><br>
+          <select id="company" name="company" style="width: 50%;" onchange="updateLogo()" required><br>
+            <option value="select">Выберите компанию</option>
+            <option value="amazon">Amazon</option>
+            <option value="apple">Apple</option>
+            <option value="meta">Meta</option>
+            <option value="google">Google</option>
+            <option value="netflix">Netflix</option>
+          </select><br><br>
+          <img id="companyLogo" style="width: 100px;" src="" alt="Company Logo"><br>
+
+          <label for="position">Должность:</label><br>
+          <input type="radio" id="intern" name="position" value="intern" required>
+          <label for="intern">Software Engineer Intern👶</label><br>
+          <input type="radio" id="junior" name="position" value="junior" required>
+          <label for="junior">Junior Software Engineer🙂</label><br>
+          <input type="radio" id="engineer" name="position" value="engineer" required>
+          <label for="engineer">Software Engineer😉</label><br>
+          <input type="radio" id="senior" name="position" value="senior" required>
+          <label for="senior">Senior Software Engineer😎</label><br><br>
+
+          <label for="social">GitHub:</label>
+          <br>
+          <input type="url" id="github" name="github" style="width: 50%;" placeholder="введите github"><br>
+          <label for="social">LinkedIn:</label>
+          <br>
+          <input type="url" id="linkedin" name="linkedin" style="width: 50%;" placeholder="введите linkedin"><br>
+          <label for="social">Instagram:</label>
+          <br>
+          <input type="url" id="instagram" name="instagram" style="width: 50%;" placeholder="введите instagram"><br>
+          <label for="social">Telegram:</label>
+          <br>
+          <input type="url" id="telegram" name="telegram" style="width: 50%;" placeholder="введите telegram"><br><br>
+
+          <button class="btn-success" type="submit">Отправить</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <div class="right-side">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+</body>
+
+</html>

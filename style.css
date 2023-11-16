@@ -1,0 +1,59 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#myForm {
+  background-color: rgb(125, 136, 173);
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.right-side {
+  background-color: rgb(125, 136, 173);
+  padding: 20px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  height: 100vh;
+  justify-content: left;
+  transition: all 1s ease-out;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.right-profile {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-link img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.inactive-logo {
+  width: 30px;
+  height: 30px;
+  filter: grayscale(100%);
+  margin-right: 5px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
